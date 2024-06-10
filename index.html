@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda de Contatos</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="agenda">
+        <header>
+            <h1>Criar Contato</h1>
+        </header>
+        <div class="imagem">
+            <img src="img/perfil.png" alt="logo image">
+        </div>
+        <form id="idContatoForm">
+            <div class="container">
+                <div class="img-icon">
+                    <i class="fa-solid fa-user"></i>
+                </div>
+                <div class="contato nome">
+                    <input type="text" id="idNome" placeholder="Nome">
+                </div>
+            </div>
+            <div class="container lastName">
+                <div class="img-icon">
+                    <i class="fa-solid fa-ghost"></i>
+                </div>
+                <div class="contato sobrenome">
+                    <input type="text" id="idSobrenome" placeholder="Sobrenome">
+                </div>
+            </div>
+            <div class="container">
+                <div class="img-icon">
+                    <i class="fa-solid fa-phone"></i>
+                </div>
+                <div class="contato numero">
+                    <input type="tel" id="idTelefone" placeholder="Telefone">
+                </div>
+                <div class="comboBox">
+                    <select name="Marcador" id="idTipoTelefone">
+                        <option value="" disabled selected>Selecione</option>
+                        <option value="Celular">Celular</option>
+                        <option value="Fixo-Casa">Casa</option>
+                        <option value="Fixo-Trabalho">Trabalho</option>
+                        <option value="Fax">Fax</option>
+                    </select>
+                </div>
+            </div>
+            <div class="container">
+                <div class="img-icon">
+                    <i class="fa-solid fa-envelope"></i>
+                </div>
+                <div class="contato email">
+                    <input type="email" id="idEmail" placeholder="email@exemplo.com">
+                </div>
+            </div>
+            <div class="btnSalvarCancelar">
+                <div class="cancelar">
+                    <input type="submit" value="Cancelar" class="btnCancelar">
+                </div>
+                <div class="salvar">
+                    <input type="submit" value="Salvar" class="btnSalvar">
+                </div>
+            </div>
+        </form>
+    
+        <div class="lista">
+            <input type="text" id="idPesquisa" placeholder="Pesquisar">
+            <table id="idTabelaContatos">
+                <tbody></tbody>
+            </table>
+        </div>
+    </div>
+</body>
+
+<script src="./js/script.js" type="text/javaScript"></script>
+</html>
